@@ -1,0 +1,73 @@
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ body{ 
+    background-image: url(bg.jpg);
+    background-position: right;
+    min-height: 100vh;
+    background-size: cover;
+} 
+main {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+ 
+nav{
+    display: flex;
+    justify-content:space-around ;
+    padding: 35px;
+    position: absolute;
+    top: 0%;
+}
+ul li{
+    color: white;
+    list-style: none;
+    display: inline;
+    padding: 50px;
+    font-size: 20px;
+    right: 0px;
+    opacity: 1;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.right{
+   padding: 40px;
+position: relative;
+left: 225%;
+}
+body div{
+    position: relative;
+    top: 10%;
+}
+.mid{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    animation: anim 3s 1;
+    
+}
+@keyframes anim {
+    from{
+        opacity: 0;
+        color:black;
+    }
+    to{
+        opacity: 1;
+        color:white;
+    }
+}
+.container{
+    display: inline-block;
+    padding: 30px; /* Adjust padding as needed */
+    background: rgba(0, 0, 0, 0.15); /* Adjust last value for opacity */
+    border-radius: 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="style5.css">
+    <!-- <link rel="stylesheet" href="style4.css"> Optional for profile-specific tweaks -->
+</head>
+<body>
+
+    <!-- Navigation Bar (Copied from afterlogin) -->
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li class="main">HOME</li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li class="right"><img src="profile.jpg" alt=""><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section Styled Like Afterlogin Page -->
+    <main>
+        <div class="mid">
+            <div class="container">
+                <h1>Your Profile</h1>
+                <p><strong>Name:</strong> <span id="user-name">John Doe</span></p>
+                <p><strong>Email:</strong> <span id="user-email">johndoe@example.com</span></p>
+                <button class="logout-btn" onclick="logoutUser()">Logout</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="profile.js" defer></script>
+</body>
+</html>

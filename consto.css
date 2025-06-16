@@ -1,0 +1,15 @@
+video{
+
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    width: 25vw;
+    height: 25vh;
+    
+}
+*{
+    background-color: black;
+    position: absolute;
+    left:37%;
+    top: 37%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="quiz-section active">
+                <div class="quiz box">
+                    <h1>Quiz</h1>
+                    <div class="quiz-header">
+                        <span> Quiz Website </span>
+                        <span class="header-score">Score: <span id="score">0</span>/10</span>
+                    </div>
+                    
+                    <!-- 🛠️ Added ID to the Question for JavaScript -->
+                    <h2 id="question" class="question"></h2>
+                    
+                    <!-- 🛠️ Empty container (options will be inserted dynamically) -->
+                    <div id="answer-buttons" class="option-list"></div>
+                    
+                    <div class="quiz-footer">
+                        <!-- <span class="question-total" id="question-count">1 of 10 Questions</span> -->
+                        <button id="next-btn" style="display: none;">Next</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

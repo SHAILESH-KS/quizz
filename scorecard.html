@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Dashboard</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <a href="#" class="logo">Quiz.</a>
+        <nav class="navbar">
+            <a href="afterlogin.html">Home</a>
+            <a href="scorecard.html">Score Card</a>
+        </nav>
+    </header>
+
+    <!-- Score Display Section -->
+    <div class="score-container">
+        <div class="score-header">
+            <h1>Congratulations!</h1>
+            <p id="score-display">Your score is loading...</p> <!-- ✅ Score will be dynamically inserted -->
+        </div>
+        
+        <div class="score-actions">
+            <a href="quiz.html"><button class="btn retry-btn">Retry Quiz</button></a>
+            <a href="afterlogin.html"><button class="btn menu-btn">Back to Home</button></a>
+        </div>
+    </div>
+
+    <!-- Linking JavaScript -->
+    <script src="scorecard.js" defer></script>
+</body>
+</html>
+
+

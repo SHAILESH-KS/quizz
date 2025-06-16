@@ -1,0 +1,116 @@
+/* Full-screen background */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main quiz container */
+.quiz-container {
+    width: 50%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+    }
+}
+
+/* Title/Header */
+.quiz-header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Score Box */
+.score-box {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Question text */
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: rgb(245, 238, 238);
+    min-height: 80px; /* Consistent height for all questions */
+    max-height: 200px; /* Prevent large question text from breaking layout */
+    overflow-y: auto; /* Scroll for very long questions */
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    text-align: center;
+    line-height: 1.5;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+
+/* Options styling */
+.option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Option hover effect */
+.option:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Next Button */
+#next-btn {
+    background: #e3e6eb; /* Blue color */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    transition: background 0.3s;
+    display: block;
+}
+
+#next-btn:hover {
+    background: #cdced2; /* Darker blue */
+}
+
+

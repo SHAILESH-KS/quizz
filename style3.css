@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Gradient background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent navbar */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00d1ff;
+}
+
+/* Score Display Container */
+.score-container {
+    margin-top: 100px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    backdrop-filter: blur(15px);
+}
+
+.score-container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.score-container p {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #00ffcb;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retry-btn {
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Warm gradient */
+    box-shadow: 0 5px 20px rgba(255, 80, 80, 0.4);
+}
+
+.menu-btn {
+    background: linear-gradient(to right, #00d2ff, #3a7bd5); /* Cool gradient */
+    box-shadow: 0 5px 20px rgba(60, 120, 255, 0.4);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.5);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
